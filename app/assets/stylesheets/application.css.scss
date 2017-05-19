@@ -22,15 +22,11 @@ body {
 	background: #ffecaf;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 100;
-}
-
 nav {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 	.navbar-brand {
 		a {
-			color: #BD1E23;
+			color: #ad1d22;
 			font-weight: bold;
 			&:hover {
 				text-decoration: none;
@@ -57,7 +53,7 @@ nav {
 	  	margin: 0;
 	  	padding: 25px 10px;
 	  	a {
-				color: #474747;
+				color: #4f4949;
 	  	}
 	  }
 	}
@@ -76,9 +72,9 @@ nav {
 .jumbotron h1{
 	color: #fff;
 	text-align: center;
+	font-weight: bolds;
 	margin-bottom: 30px;
 	letter-spacing: -1px;
-	font-weight: bolds
 }
 
 .btn-xlarge {
@@ -99,18 +95,10 @@ nav {
 	.panel-heading {
 		padding: 0;
 	}
-	.pin_image {
-		img {
-			max-width: 100%;
-			width: 100%;
-			display: block;
-			margin: 0 auto;
-		}
-	}
 	.panel-body {
-		padding: 35px;
+		padding: 30px;
 		h1 {
-			margin: 0 0 10px 0;
+			margin: 0 0 8px 0;
 		}
 		.description {
 			color: #42413e;
@@ -125,6 +113,13 @@ nav {
 		}
 		.user {
 			padding-top: 8px;
+		}
+	}
+	.pin_image {
+		img {
+			max-width: 100%;
+			width: 100%;
+			margin: 0 auto;
 		}
 	}
 }
