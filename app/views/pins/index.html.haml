@@ -3,7 +3,8 @@
 		- @pins.each do |pin|
 			.box.panel.panel-default
 				= link_to (image_tag pin.image.url), pin
-				%h2= link_to pin.title, pin
+				- if pin.title?
+					%h2= link_to pin.title, pin
 	- else 
 		%center.jumbotron
 			.h1
