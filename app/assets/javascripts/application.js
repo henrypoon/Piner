@@ -15,5 +15,4 @@
 //= require jquery_ujs
 //= require masonry/jquery.masonry
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
