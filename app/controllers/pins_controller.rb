@@ -24,6 +24,9 @@ class PinsController < ApplicationController
 	end
 
 	def edit
+	  @pin = current_user.pins.find(params[:id])
+		rescue ActiveRecord::RecordNotFound
+    redirect_to pin_path, notice: "You cannot edit this pin."
 	end
 
 	def upvote 
