@@ -56,5 +56,7 @@ class PinsController < ApplicationController
 
 	def find_pin
 		@pin = Pin.find(params[:id])
+		rescue ActiveRecord::RecordNotFound
+    redirect_to root_path, notice: "Can't find Pin"
 	end
 end

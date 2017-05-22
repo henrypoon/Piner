@@ -2,13 +2,15 @@
 	= pluralize(@comments.count, "comment")
 
 - @comments.each do |comment|
-	.col-md-6
-		%p= comment.content
-	.col-md-6
-		.btn-group.pull-right
-			= link_to edit_pin_comment_path(comment.pin, comment), class: "btn btn-default" do
-				%span.glyphicon.glyphicon-pencil
-			= link_to [comment.pin , comment], method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default" do
-				%span.glyphicon.glyphicon-remove
+	.row
+		.col-md-6
+			%p= comment.content
+		- if comment.user_id == current_user.id
+			.col-md-6
+				.btn-group.pull-right
+					= link_to edit_pin_comment_path(comment.pin, comment), class: "btn btn-default btn-xs" do
+						%span.glyphicon.glyphicon-pencil
+					= link_to [comment.pin , comment], method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default btn-xs" do
+						%span.glyphicon.glyphicon-remove
 = render 'comments/form'
 

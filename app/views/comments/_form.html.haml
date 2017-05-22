@@ -3,6 +3,6 @@
 		.col-lg-6
 			.input-group
 				= f.text_field :content, input_html: {class: 'form-control'}
-				.input-group-btn
-					= f.button :submit, class: "btn btn-secondary" do
+				.input-group-btn.pull-right
+					= f.button :submit, class: "btn btn-default btn-sm" do
 						%span.glyphicon.glyphicon-plus
