@@ -45,7 +45,7 @@ class PinsController < ApplicationController
 
 	def destroy
 		@pin.destroy
-		redirect_to root_path
+		redirect_to root_path, notice: "Pin was Successfully deleted!"
 	end
 
 	private
