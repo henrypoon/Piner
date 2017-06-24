@@ -1,24 +1,9 @@
-# README
+Simple Blog with ROR
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic feature User Adminstration: Users are allowed to create or delete their account. Implemented Login/Logout session.
 
-Things you may want to cover:
+Post Adminstration: A post can be created, edited and deleted by their owner. User can browse all posts by other users in index.
 
-* Ruby version
+Comment/Like for a post: All users can comment and like on each post.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://piner.herokuapp.com/
